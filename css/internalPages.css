@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Bitter';
+    src: url(font/Bitter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(font/Raleway-Regular.ttf);
+}
+
+body{
+    height: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* about grex*/
+
+.box{
+    background: #1f497d;
+    height: 260px;
+    color: white;
+    padding: 6%;
+}
+.disclaimer1 {
+  width: 103%;
+}
+
+.disclaimer1 a{
+	color:   #d9b755 !important;
+}
+.outline{
+    border: 2px solid #1f497d;
+    height: 260px;
+    padding: 5%;
+    text-align: justify;
+}
+
+p.letter {
+    display: inline;
+    background: #D8313F;
+    padding: 6px 6px;
+    padding-bottom: 0;
+    font-size: 130%;
+    color: white;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.content > div{
+    display: none;
+}
+
+.showContent{
+    display: block !important;
+}
+
+.demoButton{
+    /*color: #1f497d !important;*/
+    color: #000000 !important;
+    text-shadow: 0px 0px 0px !important;
+}
+
+h3,h2,h4{
+   /* font-family: 'Playfair Display', serif;*/
+  /*  font-family: 'Gentium Basic', serif;*/
+
+    font-family: 'Bitter', serif;
+
+
+    /*font-family: 'Medula One', cursive;*/
+}
+
+.content h3{
+    display: inline;
+    border-bottom: 1px solid;
+}
+/*----------------------*/
+
+/* aboutGrex1*/
+
+.content{
+    background: rgba(27, 35, 42, 0.97);
+    /*height: 35vw;*/
+    color: #ffffff;
+    padding: 5%;
+    padding-left: 2%;
+}
+
+.title{
+    display: inline;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+
+.loginLink{
+    color: #000 !important;
+    font-weight: bold;
+    text-shadow: 0px 0px !important;
+}
+
+.footer a {
+    font-weight: bold;
+}
+
+p ,
+.info{
+    /* text-indent: 4px; */
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: 2%;
+    text-align: justify;
+    /*font-family: 'Alice', serif;*/
+
+   /* font-family: 'Open Sans', sans-serif;*/
+   /* font-family: 'Open Sans', sans-serif;*/
+
+    font-family: 'Raleway', sans-serif;
+
+    /*letter-spacing: 1px;*/
+    /*word-spacing: 2px;*/
+}
+
+a,
+.demoButton{
+    font-family: 'Raleway', sans-serif;
+    color: #000 ;
+    text-decoration: none;
+
+}
+
+a:hover,
+a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+.sub-tops {
+    display: inline;
+    /* text-align: center; */
+    margin: 1%;
+    padding: 0.5%;
+
+}
+
+.sub-tops a{
+    padding: 1%;
+    padding-bottom: 0;
+      font-size: 19px;
+
+}
+
+.sub-tops.active1{
+    border-bottom: 3px solid #d9b755;
+}
+
+/*.sub-tops a:hover{
+    background: rgba(27, 35, 42, 0.97);
+    color: #ffffff !important;
+}*/
+
+
+.red{
+    background: #BD1F2E;
+
+}
+
+.grey{
+    background: #666;
+}
+.nav1{
+    margin: 2%;
+}
+
+.mainTitle{
+    margin-top: 3%;
+}
+
+li{
+    /*margin-top: 2%;*/
+    margin-top: 20px;
+    font-family: 'Raleway','serif';
+    font-size: 18px;
+}
+
+iframe{
+    width: 100%;
+}
+
+h4{
+    text-align: center;
+    margin: 5%;
+    margin-bottom: 2%;
+}
+
+.showAll{
+    display: block !important;
+
+}
+
+#whoIsBehindIt img{
+    width: 100%;
+}
+
+.showAll p {
+    text-align: center;
+    font-size: 101%;
+}
+
+a.footer1 {
+    color: black !important;
+    text-shadow: 0px 0px !important;
+    font-size: 85%;
+}
+
+.row.footer {
+    margin-top: 5%;
+    position: relative;
+    top: 0;
+    background: white;
+    height: auto !important;
+}
+
+.quote{
+    padding: 0% 6%;
+}
+
+li strong,
+p strong{
+    color: #FEBB26 ;
+}
+
+.dropLink{
+    color: #000 !important;
+    text-shadow: 0px 0px !important;
+}
+
+ol[type="a"] li {
+    margin-top: 1%;
+    margin-left: 3%;
+    font-size: 100%;
+}
+
+#whyGrex{
+    margin-top: -2%;
+}
+
+.whoisbehinditheight{
+/*	height: 1750px;*/
+}
+/*--------------*/
+
+/* media queries */
+
+@media screen and (min-device-width: 768px) and (max-device-width : 1024px) {
+    .sub-tops a {
+        font-size: 150%;
+    }
+
+    a.footer1 {
+        font-size: 118% !important;
+
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+    /* Mobile styles */
+    .sub-tops a {
+        font-size: 230%;
+    }
+
+    p {
+        text-align: start;
+        margin: 5% 0%;
+    }
+
+    h2 {
+        font-size: 400%;
+    }
+
+    .grexLogo img{
+        width: 150%;
+        margin-top: 20%;
+    }
+
+    .footer .col-lg-2.col-md-2.col-xs-12 {
+        text-align: center;
+        padding: 1%;
+        font-size: 115%;
+       /* border: 2px solid black;*/
+        border: 2px solid #d9b755;
+    }
+}
+
+@media screen and (max-width: 1080px){
+.footer {
+margin-top: -25.4%;
+text-align: center;
+height: 315px;
+width: 103.2% !important;
+}
+
+/*
+.social img {
+width: 80% !important;
+}*/
+
+}
+
+/* end media queries */
+
+
+.investorMsg {
+	width: 103%;
+  background: #d9b755 !important;
+}

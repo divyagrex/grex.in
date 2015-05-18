@@ -1,0 +1,72 @@
+.row.mainTitle {
+    text-align: center;
+    margin-top: 5%;
+    color: #275D90;
+}
+
+
+/* carousel edit*/
+/*
+.indi{
+    height: 50px;
+    background: red;
+}*/
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-indicators {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-left: 0;
+    /*margin-left: 0;*/
+    height: 100%;
+    position: relative;
+}
+
+.carousel-indicators li {
+    width: 10vw;
+    height: 10vw;
+    margin-left: 40% ;
+    margin-bottom: 2% ;
+    border: 2px solid #275D90;
+    text-indent: 0;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    display: block;
+}
+
+.carousel-indicators  .active1 {
+    width: 10vw;
+    height: 10vw;
+
+    margin-left: 40% ;
+    margin-bottom: 2% ;
+    background-color: #275D90;
+    color: white;
+    border: 0;
+    text-indent: 0;
+}
+
+.carousel-indicators img{
+
+width: 50%;
+margin-top: 10%;
+margin-bottom: 10%;
+}
+
+
+.carousel-control{
+    background-image: none !important;
+}
+
+.textContent{
+
+    font-size: 1.2vw;
+    line-height: 168%;
+    text-align: justify;
+}
+/* end carousel edit*/

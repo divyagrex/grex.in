@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Calibri';
+    
+    /*src: local('Calibri'), local('OpenSans'), url(../fonts/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');*/
+    src: url(font/Calibri.tff);
+}
+
+
+
+body,.body{
+	 font-family: 'Calibri',sans-serif;
+	  padding: 5% 20%;
+  text-align: justify !important;
+  font-size: 170% !important;
+  line-height: 170% !important;
+  color: black !important;
+  
+}
+
+h2,h4,h3{
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: bold;
+}
+
+h2{
+	  text-align: center;
+  margin-bottom: 5%;
+}
+
+h4 {
+  margin-top: 5%;
+}

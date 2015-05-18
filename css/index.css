@@ -1,0 +1,786 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+
+
+.investorMsg {
+  text-align: center;
+  font-size: 85%;
+  font-style: normal;
+  font-family: "Helvetica";
+  background: grey;
+  margin-left: 0 !important;
+  margin-top: -1%;
+  color: white;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+  /* text-shadow: 0px 0px; */
+}
+
+.emailId a {
+  color: #d9b755;
+  font-size: 100%;
+}
+
+.mainBody{
+    height: 100vh;
+    perspective: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    /*height: 100vh;*/
+    overflow-x: hidden;
+   /* background: url(bg/bg1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;*/
+}
+
+.bg1{
+    background: url(bg/bg1.jpg);
+}
+
+.bg2{
+    background: url(bg/chair.jpg);
+}
+
+.bg3{
+    background: url(bg/girl.jpg);
+}
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.8s all linear;
+}
+
+.active{
+    opacity: 1 !important;
+}
+
+button, input{
+    outline: none;
+}
+
+/* header*/
+
+.row.header {
+    margin-top: 1%;
+}
+
+input.search {
+    width: 100%;
+    border-radius: 13px;
+    border: 1px solid #919191;
+    padding: 2%;
+    outline: none;
+}
+
+button.searchButton {
+    background: #c3a242;
+    border: 3px solid #c3a242;
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+    /* left: 86.5%; */
+    color: white;
+    width: 35px;
+    height: 35px;
+    outline: none;
+    right: 3%;
+}
+/*dropdown*/
+button.demoButton {
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    font-weight: bold;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    margin-top: 8%;
+}
+
+.yellowButton{
+    background: #c3a242;
+    border: 2px solid #c3a242;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(27, 35, 42, 0.97);
+    margin-left: 44%;
+    margin-top: -5.1%;
+}
+
+/*.login{
+    height: 400px !important;
+}*/
+
+.dropDown {
+    z-index: 10;
+    margin-top: 12%;
+    margin-left: -195%;
+    position: absolute;
+    width: 550px;
+    color: #ffffff;
+    padding: 20%;
+    height: auto;
+    border-radius: 5px;
+    background: rgba(27, 35, 42, 0.97);
+
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.2s all linear;
+    transition-delay: 0.2s;
+}
+
+.dropTitle{
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.subTopics,
+.forgotPassword{
+    color: white;
+    padding: 3% 0%;
+}
+
+.subTopics:hover a,
+.forgotPassword:hover,
+a.footer1:hover,
+a.dropLink:hover
+{
+    text-decoration: none;
+    color: #d9b755;
+}
+
+a{
+	text-decoration: none !important;
+	outline: 0 !important;
+}
+
+.loginLink:hover{
+	color: white;
+}
+
+.footer>div:first-child{
+	   margin-left: 4%;
+}
+.forgotPassword{
+    font-size: 85%;
+}
+
+.subTopics a{
+    color: #ffffff;
+}
+
+.openDropdown{
+    transform: scaleY(1);
+
+}
+/*end dropdown*/
+
+/* end header*/
+
+/*body*/
+.row.body {
+    margin-top: 0.5%;
+    width: 100vw;
+    height: 100vh;
+  /*  background: url(bg/background12.jpg);
+    background-size: cover;
+    color: white;*/
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    padding: 2%;
+    padding-left: 9%;
+    position: relative;
+
+}
+
+.tagLine {
+    font-size: 100%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    width: 41%;
+    /*font-family: 'Ubuntu', sans-serif !important;*/
+}
+
+.body h1{
+    font-family: 'Righteous', cursive;
+}
+
+.moveLeft{
+    transform: translateX(-100%);
+}
+
+.mainText{
+    transition: 0.2s all linear;
+    transition-delay: 0.2s;
+      margin-left: -9px;
+}
+
+.mainText h3 {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+
+
+/*login body*/
+/*
+.registerPage,
+.loginForm{
+    background: rgba(27, 35, 42, 0.97);
+}
+
+button.LoginPush, .registerPush {
+    background: #275D90;
+    border: 1px solid #275D90;
+    padding: 0.5% 1%;
+    border-radius: 5px;
+    margin-top: 2%;
+    position: absolute;
+    transform: rotate(270deg);
+    margin-left: -0.5%;
+
+}
+
+form.loginForm {
+    text-align: center;
+    margin-left: 4.2%;
+    width: 50%;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 8%;
+    margin-top: -4%;
+}*/
+/*.loginFormPage , .registerPage{
+    margin-top:-17%;
+    padding-left: 20%;
+    transition: 0.2s all linear;
+    transition-delay: 0.2s;
+}
+
+.loginForm input {
+    *//*background: transparent;*//*
+    color: #000000;
+    border: 2px solid white;
+    border-radius: 9px;
+    padding: 2%;
+    width: 70%;
+    text-align: center;
+    outline: 0;
+}*/
+
+.registerButtons button {
+    background: transparent;
+    border: 2px solid white;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    /*margin-top: 5%;
+    margin-bottom: 9%;*/
+    margin-right: 2%;
+}
+
+.registerButtons button:hover{
+    background: #c3a242;
+}
+
+
+.registerButtons img{
+    width: 40%;
+}
+
+.container1 {
+    margin-bottom: 2%;
+}
+
+button.signIn {
+    /*background: #125E14;*/
+    background: transparent;
+    border: 2px solid #d9b755;
+    width: 70%;
+    padding: 1%;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+.moveRight{
+    transform: translateX(79%);
+}
+
+.moveReg{
+    transform: translateX(0) !important;
+
+
+}
+
+
+/*end login body*/
+
+/*Register body*/
+/*
+.registerPage{
+    position: absolute;
+    top: 0;
+    padding-left: 0;
+    margin-top: 6%;
+    width: 50%;
+    border: 2px solid;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    margin-left: 17%;
+    transform: translateX(149%);
+}
+
+.contentBodyReg{
+    text-align: center;
+
+}
+button.registerPush {
+    position: absolute;
+    margin-left: -8.3%;
+    margin-top: 5%;
+    padding: 1% 1%;
+}
+
+.registerButtons button {
+    background: transparent;
+    border: 2px solid white;
+    padding: 1%;
+    *//*border-radius: 5px;*//*
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    margin-top: 5%;
+    margin-bottom: 9%;
+    margin-right: 2%;
+}
+
+.registerButtons img{
+    width: 40%;
+}*/
+/* end Register body*/
+
+
+/*end body*/
+
+/*footer */
+.border {
+    border-bottom: 1px solid;
+    width: 100%;
+}
+
+.footer {
+    /* color: #053562; */
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    background-color: rgba(27, 35, 42, 0.97);
+    height: 125px;
+    margin-top: -10.4%;
+    position: fixed;
+     width: 99.1%;
+    top: 111vh;
+    transition: 0.2s all linear;
+    padding-top: 0.7%;
+}
+
+a.footer1 {
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-size: 95%;
+    cursor: hand !important;
+}
+
+.footer .col-lg-2.col-md-2.col-xs-2 {
+    margin-top: 0.8%;
+}
+
+.disclaimer{
+    height: 100px;
+    background: black;
+}
+.subFooter {
+    font-size: 105%;
+    line-height: 160%;
+}
+
+.border {
+    border-bottom: 1px solid;
+    width: 72%;
+    margin-bottom: 2%;
+}
+
+.fade{
+    opacity: 0;
+}
+
+button.investorButton {
+    border: 3px solid #c3a242;
+    padding: 0.5%;
+    background: #c3a242;
+    width: 18%;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+/*end footer */
+
+.loginForm{
+    padding-top: 5%;
+}
+
+.screen2{
+    height: 100vh;
+    background: #ffffff;
+    padding: 6% 3%;
+}
+
+iframe{
+    width: 100%;
+    height: 375px;
+}
+
+
+.moveFooter{
+    margin-top: -14.2%;
+}
+
+.address{
+    border-top: 1px solid;
+    padding: 2px 0px;
+    margin-top: 2px;
+}
+
+.dropUp{
+    display: none;
+}
+
+.showDropUp{
+    display: block !important;
+}
+
+.col-lg-12.col-md-12.col-xs-12.disclaimer1 {
+    background: black;
+    font-size: 69%;
+    padding: 4px;
+    
+}
+
+.disclaimer1 a{
+	  color: #d9b755 !important;
+}
+.dropLink {
+    font-size: 80%;
+    color: #ffffff;
+}
+
+.screen2 h3{
+    color: #CC181E;
+}
+
+.loginLink{
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,1);
+   
+  padding: 5% 10%;
+  
+
+}
+
+.social img{
+    width: 20px;
+    margin-left: 10%;
+}
+
+.youtube img{
+	width: 35px;}
+
+a.embedEmail {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.grexLogo {
+  padding-left: 0;
+}
+
+.loginDiv{
+	  margin-left: 64px;
+  margin-right: 10px;
+}
+
+/*medi queries */
+
+
+
+@media screen and (max-width: 991px) {
+	
+	.gap{
+		width: 35% !important;
+	}
+	
+	.footer{
+    	margin-top: -18%;
+    	text-align: center;
+    	height: 315px;
+    	width: 98.3%;
+    	padding-top: 0;
+    }
+    
+    button.moveDownButton {
+  top: 45vh !important;
+}
+    
+    .social img {
+  width: 20%;
+  margin-left: 20%;
+}
+    .moveFooter{
+    	margin-top: -36.4%;
+    }
+    
+    .footer .col-lg-2.col-md-2.col-xs-12 {
+  border-top: 2px solid #d9b755;}
+}
+
+
+@media screen and (max-width: 953px) {
+	
+	
+	
+	.footer{
+		margin-top: -19%;
+	}
+	
+	.moveFooter {
+  margin-top: -39.4%;
+}
+}
+
+@media screen and (max-width: 878px) {
+	.footer {
+  margin-top: -21%;
+}
+
+.moveFooter {
+  margin-top: -43%;
+}
+}
+
+@media screen and (max-width: 790px){
+	.footer {
+  margin-top: -24%;
+}
+
+/*
+.moveFooter {
+  margin-top: -47%;
+}*/
+
+.moveFooter{
+	  height: 280px;
+  overflow-y: auto;
+  margin-top: -339px;
+}
+} 
+
+@media screen and (max-width: 685px){
+	.footer{
+		  height: 106px;
+  overflow-y: auto;
+  margin-top: -165px;
+	}
+}
+
+@media screen and (max-width: 620px){
+	.moveFooter {
+  margin-top: -60.4%;
+}
+}
+
+
+@media screen and (min-device-width: 768px) and (max-device-width : 1024px){
+    .social img {
+        width: 15%;
+    }
+
+    .social{
+        margin-left: 3%;
+    }
+
+
+    .screen2{
+        height: 150vh;
+    }
+    
+    
+}
+
+
+@media screen and (min-device-width: 500px) and (max-device-width : 768px){
+
+    .bg{
+        width: 100vw;
+        height: 50vh;
+    }
+    
+    .body{
+        height: 50vh !important;
+
+    }
+
+
+    .footer{
+        top: 102vh;
+    }
+
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+
+    .bg{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .body{
+        height: 50vh !important;
+
+    }
+
+
+    .footer{
+        top: 90vh;
+        height: 500px;
+    }
+
+    .moveFooter{
+        margin-top: -32%;
+    }
+
+    .social img {
+        width: 15%;
+    }
+
+    .social{
+        margin-left: 3%;
+    }
+
+
+
+    .sub-tops a {
+        font-size: 230%;
+    }
+
+    p {
+        text-align: start;
+        margin: 5% 0%;
+    }
+
+    h2 {
+        font-size: 400%;
+    }
+
+    .grexLogo img{
+        width: 150%;
+        margin-top: 20%;
+    }
+
+    .footer .col-lg-2.col-md-2.col-xs-12 {
+    	margin-top: 1px;
+    	width: 100vw;
+        text-align: center;
+        padding: 1%;
+        font-size: 115%;
+        /* border: 2px solid black;*/
+        border: 1px solid #d9b755;
+    }
+    
+    .header .col-lg-1.col-md-1{
+        margin-top: 5%;
+    }
+}
+
+button.moveDownButton {
+  background: transparent;
+  border: 0;
+  font-size: 400%;
+  position: absolute;
+  top: 61vh;
+  left: 47.3vw;
+}
+
+
+.mainBody::-webkit-scrollbar,
+body::-webkit-scrollbar ,
+.footerbody::-webkit-scrollbar {
+    width: 12px;
+    z-index: 10;
+}
+ 
+.mainBody::-webkit-scrollbar-track ,
+body::-webkit-scrollbar-track,
+.footer::-webkit-scrollbar-track {
+/*    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background: white;
+    z-index: 10;
+}
+ 
+.mainBody::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb ,
+.footer::-webkit-scrollbar-thumb {
+  background-color: #275D90;
+  outline: 1px solid #d9b755;
+     z-index: 10;
+}
+
+.footer::-webkit-scrollbar-thumb{
+	background-color: #d9b755;
+}
+
+.mainBody::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+.footer::-webkit-scrollbar-button{{
+	background-color: white;
+	   z-index: 10;
+}
+
+.mainBody::-webkit-scrollbar-button:decrement,
+body::-webkit-scrollbar-button:decrement{
+	background: url(img/up7.png);
+	background-color: white;
+	background-size: 12px 12px;
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+}
+
+.mainBody::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button:increment{
+	background: url(img/down126.png);
+	background-color: white;
+	background-size: 12px 12px;
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+}
